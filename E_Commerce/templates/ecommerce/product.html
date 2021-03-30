@@ -1,0 +1,9 @@
+{% for products in catprods %}
+<div class="owl-carousel products owl-theme">
+    {% for i in products %}
+    <div class="item">
+        <img src="/media/{{i.image}}" class="w-25" alt="{{i.alternative_text}}">
+    </div>
+    {% endfor %}
+</div>
+{% endfor %}

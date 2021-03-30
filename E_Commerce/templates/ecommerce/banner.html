@@ -1,0 +1,7 @@
+<div class="owl-carousel banners owl-theme">
+    {% for banner in home_banner %}
+    <div class="item">
+        <img src="/media/{{banner.image}}" alt="{{banner.alternative_text}}">
+    </div>
+    {% endfor %}
+</div>

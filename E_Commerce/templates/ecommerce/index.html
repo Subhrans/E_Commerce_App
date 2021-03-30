@@ -1,4 +1,37 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
-    <p class="h3">Welcome to ecommerce</p>
+<!--    Header Area -->
+<header>
+    {% include 'ecommerce/navbar.html' %}
+</header>
+<!--    End of Header Area -->
+
+<main>
+    <!-- Banner Area -->
+    <section class="container-fluid">
+        {% include 'ecommerce/banner.html' %}
+    </section>
+    <!--End of Banner Area -->
+
+    <!--    Section 1    -->
+    <section class="container-fluid">
+        {% include 'ecommerce/product.html' %}
+    </section>
+
+    <!--    End of Section 1     -->
+
+    <!--    Section 2   -->
+
+    <!--    End of Section 2     -->
+
+    <!--    Brand Area    -->
+
+    <!--    End of Brand Area     -->
+
+    <!--    Footer Area    -->
+
+    <!--    End of Footer Area     -->
+</main>
+<p class="h3">Welcome to ecommerce</p>
 {% endblock %}

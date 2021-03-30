@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'E_Commerce',
     'django_cleanup',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
