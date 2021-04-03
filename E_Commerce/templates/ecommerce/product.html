@@ -1,5 +1,8 @@
 {% for products in catprods %}
-<div class="owl-carousel products owl-theme">
+    {% for j in cat_list %}
+        <p class="h4 mt-5">Top brand | {{j}}</p>
+    {% endfor %}
+<div class="owl-carousel products owl-theme mt-5">
     {% for i in products %}
     <div class="item">
         <img src="/media/{{i.image}}" class="w-25" alt="{{i.alternative_text}}">
